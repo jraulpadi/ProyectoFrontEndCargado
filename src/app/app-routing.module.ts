@@ -4,13 +4,15 @@ import { PrincipalComponent } from './principal/principal.component';
 import { DashboardComponent }   from './dashboard/dashboard.component';
 import { ProductoDetalleComponent }  from './producto-detalle/producto-detalle.component';
 import { LocalsComponent }  from './locals/locals.component';
+import { CargalocalComponent } from './cargalocal/cargalocal.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'detalle/:id', component: ProductoDetalleComponent },
   { path: 'productos', component: PrincipalComponent },
-  { path: 'locals', component: LocalsComponent}
+  { path: 'locals', component: LocalsComponent},
+  { path: 'cargalocal', component: CargalocalComponent }
 ];
 
 @NgModule({
