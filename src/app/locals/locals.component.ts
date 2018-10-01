@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import swal from 'sweetalert2';
 
 
 @Component({
@@ -38,10 +38,39 @@ export class LocalsComponent implements OnInit {
   }
 
   BorrarLocalNombre(): void{
-    //localStorage.removeItem('nombre');
-    this.nombre = '';
+    //localStorage.removeItem('nombre');    
 
-    
+    swal({
+      title: '¿Quiere borrar los datos?',
+      text: 'Los datos se borraran de la memoria local',
+      type: 'warning',
+      showCancelButton: true,
+      confirmButtonText: 'Sí. Borrar',
+      cancelButtonText: 'No, mantener los datos'
+    }).then((result) => {
+      if (result.value) {
+
+        localStorage.removeItem('nombreid');
+        localStorage.removeItem('nombre');
+        localStorage.removeItem('valor');
+
+        this.CargarLocalNombre();
+
+        swal(
+          'Borrados',
+          'Los datos del LocalStorage han sido eliminados.',
+          'success'
+        )
+      // For more information about handling dismissals please visit
+      // https://sweetalert2.github.io/#handling-dismissals
+      } else if (result.dismiss === swal.DismissReason.cancel) {
+        swal(
+          'Cancelado',
+          'Los datos siguen',
+          'error'
+        )
+      }
+    })
 
   }
 
