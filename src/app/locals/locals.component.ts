@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 
+
 @Component({
   selector: 'app-locals',
   templateUrl: './locals.component.html',
@@ -37,8 +38,11 @@ export class LocalsComponent implements OnInit {
   }
 
   BorrarLocalNombre(): void{
-    localStorage.removeItem('nombre');
+    //localStorage.removeItem('nombre');
     this.nombre = '';
+
+    
+
   }
 
 }

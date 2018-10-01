@@ -20,6 +20,8 @@ import {DataTableModule} from "angular-6-datatable";
 import { CargalocalComponent } from './cargalocal/cargalocal.component';
 
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
