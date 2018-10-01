@@ -17,6 +17,7 @@ import { ProductoSearchComponent } from './producto-search/producto-search.compo
 import { LocalsComponent } from './locals/locals.component';
 
 import {DataTableModule} from "angular-6-datatable";
+import { CargalocalComponent } from './cargalocal/cargalocal.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import {DataTableModule} from "angular-6-datatable";
     MessagesComponent,
     DashboardComponent,
     ProductoSearchComponent,
-    LocalsComponent
+    LocalsComponent,
+    CargalocalComponent
   ],
   imports: [
     BrowserModule,
