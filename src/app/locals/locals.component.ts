@@ -23,13 +23,12 @@ export class LocalsComponent implements OnInit {
     this.valor = 'Activo';
     */
 
-    this.nombre = localStorage.getItem('nombre');   
+    this.nombre = localStorage.getItem('nombre');
+    this.nombreid = localStorage.getItem('nombreid');
+    this.valor = localStorage.getItem('valor');  
   }
 
   CargarLocalNombre(): void{
-    localStorage.setItem('nombreid', 'Nombre');
-    localStorage.setItem('nombre', 'Julio Raúl Padilla');
-    localStorage.setItem('valor', 'Programador');
     //localStorage.setItem(this.almlocal.nombreid, this.almlocal.nombre);   
 
     this.nombre = localStorage.getItem('nombre');

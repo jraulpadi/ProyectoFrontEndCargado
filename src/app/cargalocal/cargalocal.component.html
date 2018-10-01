@@ -1,3 +1,18 @@
 <p>
   cargalocal works!
 </p>
+<label> Tipo:
+    <input #nombreid />
+</label>
+<label> Nombre:
+    <input #nombre />
+</label>
+<label> Valor:
+    <input #valor />
+</label>
+
+<div>
+    
+  <li><button (click)="cambiarlocal(nombreid.value, nombre.value, valor.value)">Cargar</button></li>
+  <li><button (click)="goBack()">Volver</button></li>
+</div>
