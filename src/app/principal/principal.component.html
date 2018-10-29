@@ -1,11 +1,16 @@
 <h2>Productos</h2>
 
 <div>
-  <label> Nombre Producto:
-    <input #productoNombre />
-  </label>
-
-  <button (click)="add(productoNombre.value); productoNombre.value=''">Agregar</button>
+    <label> Id:
+        <input #productoId />    
+    </label>
+    <label> Nombre:
+        <input #productoNombre />    
+    </label>
+    <label> Valor:
+        <input #productoValor />
+    </label>
+    <button (click)="add(productoNombre.value, productoId.value, productoValor.value); productoNombre.value=''">Agregar</button>
 </div>
 
 <ul class="productos">

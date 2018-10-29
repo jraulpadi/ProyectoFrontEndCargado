@@ -1,11 +1,6 @@
 import { Producto } from './producto';
 
 export const PRODUCTOS: Producto[] = [
-  { id: 11, nombre: 'Monitor' },
-  { id: 12, nombre: 'Teclado' },
-  { id: 13, nombre: 'Ratón' },
-  { id: 14, nombre: 'UPS' },
-  { id: 15, nombre: 'Barracuda' },
-  { id: 16, nombre: 'Rack' },
-  { id: 17, nombre: 'Regleta' }
+  {_id:'awefawefaw', id: 11, nombre: 'Monitor', valor:11, __v:0 },
+  {_id:'awefsadfasawefaw', id: 12, nombre: 'Mono', valor:12, __v:0 }
 ];

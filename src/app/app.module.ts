@@ -11,8 +11,8 @@ import { MessagesComponent } from './messages/messages.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
-import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { InMemoryDataService }  from './in-memory-data.service';
+//import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+//import { InMemoryDataService }  from './in-memory-data.service';
 import { ProductoSearchComponent } from './producto-search/producto-search.component';
 import { LocalsComponent } from './locals/locals.component';
 
@@ -40,13 +40,13 @@ import { CargalocalComponent } from './cargalocal/cargalocal.component';
     HttpModule,
     HttpClientModule,
     AppRoutingModule, 
-    HttpClientModule,
+    HttpClientModule
 // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
 // and returns simulated server responses.
 // Remove it when a real server is ready to receive requests.
-  HttpClientInMemoryWebApiModule.forRoot(
+/*  HttpClientInMemoryWebApiModule.forRoot(
       InMemoryDataService, { dataEncapsulation: false }
-  )
+  )*/
   ],
   providers: [],
   bootstrap: [AppComponent]

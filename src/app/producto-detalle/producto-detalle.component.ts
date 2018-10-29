@@ -31,11 +31,17 @@ export class ProductoDetalleComponent implements OnInit {
   getProducto(): void{
     const id = +this.route.snapshot.paramMap.get('id');
     this.productoService.getProducto(id)
-      .subscribe(producto => this.producto = producto);
+      .subscribe(producto => this.producto = producto[0]);
+
+    console.log(this.producto);
+    
   }
 
   save(): void{
+    //console.log(this.producto);
+    
     this.productoService.updateProducto(this.producto)
       .subscribe(() => this.goBack());
+      
   }
 }

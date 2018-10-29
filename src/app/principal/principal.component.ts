@@ -29,12 +29,15 @@ export class PrincipalComponent implements OnInit {
         .subscribe(productos => this.productos = productos);
   }
 
-  add(nombre: string): void{
+  add(nombre: string, id: number, valor: number ): void{
     nombre = nombre.trim();
+    //id = Number(id);
     if(!nombre){return;}
-    this.productoService.addProducto({nombre} as Producto)
+    this.productoService.addProducto({id, nombre, valor} as Producto)
       .subscribe(producto=>{
-        this.productos.push(producto);
+        //console.log(producto[0]);
+        //this.productos.push(producto);
+        this.getProductos();
       })
   }
 
