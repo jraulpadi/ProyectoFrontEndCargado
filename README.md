@@ -1,28 +1,85 @@
-# ProyFrontEnd
+# Inventario Landívar
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.3.
+_Parte pública de un proyecto full stack. Front End._
 
-## Development server
+## Comenzando 🚀
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+_Aquí controlará los listados de artículos que necesite._
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+### Pre-requisitos 📋
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+_Se recomienda Chrome 5 pero cualquier navegador puede servir.
 
-## Running unit tests
+* NodeJS en su última versión
+* Angular 6
+* Http Services
+* Bootstrap
+* Visual Studio Code_
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```
 
-## Running end-to-end tests
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+### Instalación 🔧
 
-## Further help
+_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-"# ProyectoFrontEnd" 
+_Descargar e instalar NodeJs_
+
+```
+https://nodejs.org/es/
+```
+
+_Desde consola instalar Angular Cli_
+
+```
+npm install -g @angular/cli
+```
+
+_Instalar bootstrap_
+
+```
+npm install bootstrap_
+```
+
+
+
+## Ejecutando como Localhost⚙️
+
+_Desde la pestaña Productos puede ingresarlos solo ingresando un código de referencia, el nombre y la cantidad. Presionar agregar_
+
+### En la parte inferior hay una mensajería a modo de bitácora. Si quiere borrarla presione Clear. 🔩
+
+
+### Angular 6 ya con base TypeScript ⌨️
+
+
+
+
+## Construido con 🛠️
+
+_Angular 6_
+
+* https://nodejs.org/es/
+* https://angular.io
+
+
+## Versionado 📌
+
+Versión 1.0
+
+## Autores ✒️
+
+_Julio Raúl Padilla_
+
+
+## Expresiones de Gratitud 🎁
+
+* A los catedráticos que nos darán buena nota.
+
+
+
+---
+⌨️ con 00 por https://github.com/jraulpadi 😊
