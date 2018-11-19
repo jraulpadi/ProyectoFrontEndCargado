@@ -20,7 +20,12 @@ const httpOptions = {
 
 export class ProductoService {
   //private productosUrl = 'api/productos';  // URL to web api
-  private productosUrl = 'http://localhost:3000/api/v1';
+  
+  // LocalHost
+  //private productosUrl = 'http://localhost:3000/api/v1';
+  
+  //Azure
+  private productosUrl = 'https://atrasdesdevsc.azurewebsites.net/api/v1';
 
   constructor(
     private http: HttpClient,
