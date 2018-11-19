@@ -10,7 +10,7 @@
     <label> Valor:
         <input #productoValor />
     </label>
-    <button (click)="add(productoNombre.value, productoId.value, productoValor.value); productoNombre.value=''">Agregar</button>
+    <button (click)="add(productoNombre.value, productoId.value, productoValor.value); productoNombre.value=''; productoId.value=''; productoValor.value=''">Agregar</button>
 </div>
 
 <ul class="productos">

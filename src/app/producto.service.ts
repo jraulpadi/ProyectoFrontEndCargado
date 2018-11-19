@@ -116,7 +116,7 @@ export class ProductoService {
       return of([]);
     }
 
-    return this.http.get<Producto[]>(`${this.productosUrl}/?nombre=${term}`)
+    return this.http.get<Producto[]>(`${this.productosUrl}/like/${term}`)
       .pipe(
         tap(_ => this.log(`Se encontraron productos parecidos a "${term}"`)),
         catchError(this.handleError<Producto[]>('searchProductos', []))
